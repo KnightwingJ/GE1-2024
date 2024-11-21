@@ -94,8 +94,8 @@ func load_samples():
 		while file_name != "":
 			if dir.current_is_dir():
 				print("Found directory: " + file_name)
-			if file_name.ends_with('.wav.import') or file_name.ends_with('.mp3.import'):			
-				file_name = file_name.left(len(file_name) - len('.import'))
+			if file_name.ends_with('.wav') or file_name.ends_with('.mp3'):			
+				file_name = file_name.left(len(file_name))
 				# var asp = AudioStreamPlayer.new()
 				# asp.set_stream(load(SOUND_DIR + '/' + filename))
 				# add_child(asp)
